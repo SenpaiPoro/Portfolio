@@ -16,6 +16,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/scripts.js"></script>
+
+
     </head>
     <body class="d-flex flex-column h-100 ">
         <main class="flex-shrink-0">
@@ -29,6 +32,8 @@
                             <li class="nav-item"><a class="nav-link" href="resume.php">Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.php">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                            <button id="themeToggle" onclick="toggleTheme()" class="DarkThemeButton">Switch to Dark Mode</button>
+
                         </ul>
                     </div>
                 </div>
