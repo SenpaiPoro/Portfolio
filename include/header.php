@@ -33,7 +33,7 @@
                             <li class="nav-item"><a class="nav-link" href="projects.php">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                             <div class="d-grid gap-2">
-                            <button id="themeToggle" onclick="toggleTheme()" type="button" class="btn .btn-outline-secondary ">Switch to Dark Mode</button>
+                            <button id="themeToggle" onclick="toggleTheme()" type="button" class="btn btn-outline-dark">Switch to Dark Mode</button>
                             </div>
                         </ul>
                     </div>
