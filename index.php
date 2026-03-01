@@ -151,9 +151,9 @@
                                 <p class="lead text-dark-mode mb-4">My name is Marlon Jr Aquion Mullet</p>
                                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
+                                    <a class="text-gradient" href="https://www.instagram.com/cs.marlon03/" target="_blank"><i class="bi bi-instagram"></i></a>
+                                    <a class="text-gradient" href="https://www.linkedin.com/in/marlon-mullet-jr-706636354/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="https://github.com/SenpaiPoro" target="_blank"><i class="bi bi-github"></i></a>
                                 </div>
                             </div>
                         </div>
