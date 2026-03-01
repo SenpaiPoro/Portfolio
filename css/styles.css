@@ -79,13 +79,14 @@
   --bs-highlight-bg: #fff3cd;
   --text-color: #100c0d;
   --bs--btn-info: #e21e80;
+  --bs-card-bg: white; 
 }
 
 .dark-mode {
   --bs-body-bg: #100c0d;
   --text-color: white;
   --bs--btn-info: #0dcaf0;
-
+  --bs-card-bg: #181C14; 
 }
 
 
@@ -4223,7 +4224,7 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
+  background-color: var(--bs-card-bg);
 }
 
 .card-title {
@@ -8330,7 +8331,11 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-body-bg), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs--ca), var(--bs-bg-opacity)) !important;
+}
+.bg-card-theme{
+    --bs-bg-opacity: 1;
+      background-color: var(--bs-card-bg);
 }
 
 .bg-dark {
