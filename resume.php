@@ -23,7 +23,7 @@
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-card-theme p-4 rounded-4">
+                                            <div class="p-4 rounded-4">
                                                 <div class="text-primary fw-bolder mb-2">2019 - Present</div>
                                                 <div class="small fw-bolder">Web Developer</div>
                                                 <div class="small text-muted">Stark Industries</div>

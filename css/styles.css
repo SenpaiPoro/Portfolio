@@ -79,14 +79,14 @@
   --bs-highlight-bg: #fff3cd;
   --text-color: #100c0d;
   --bs--btn-info: #e21e80;
-  --bs-card-bg: white; 
+  --bs-card: white; 
 }
 
 .dark-mode {
   --bs-body-bg: #100c0d;
   --text-color: white;
   --bs--btn-info: #0dcaf0;
-  --bs-card-bg: #181C14; 
+  --bs-card: #181C14; 
 }
 
 
@@ -4224,13 +4224,13 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  background-color: var(--bs-card-bg);
+  background-color: var(--bs-card);
 }
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
 }
-
+s
 .card-subtitle {
   margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
   margin-bottom: 0;
