@@ -8135,6 +8135,7 @@ s
 
 .fw-bolder {
   font-weight: bolder !important;
+  color: var(--text-color);
 }
 
 .lh-1 {
