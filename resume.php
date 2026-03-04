@@ -28,7 +28,7 @@
                                                 <div class="small fw-bolder text-dark-mode">Web Developer</div>
                                                 <div class="small text-muted">Stark Industries</div>
                                                 <div class="small text-muted">Los Angeles, CA</div>
-                                            </div>
+                                      </div>
                                         </div>
                                         <div class="col-lg-8 text-dark-mode"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
                                     </div>
