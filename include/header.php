@@ -6,6 +6,16 @@ if (session_status() == PHP_SESSION_NONE) {
   header('Location: login.php');
   exit();
 }
+
+        $paramResult = checkId('id');
+        $sql = "SELECT username FROM user WHERE id= '$paramResult' LIMIT 1";
+        $results = $conn->query($sql);
+
+        $profile = "SELECT * FROM profile WHERE username = '$username' ";
+        $value = mysqli_query($conn, $profile);
+        $data = $value->fetch_assoc();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
