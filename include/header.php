@@ -10,10 +10,12 @@ if (session_status() == PHP_SESSION_NONE) {
         $paramResult = checkId('id');
         $sql = "SELECT username FROM user WHERE id= '$paramResult' LIMIT 1";
         $results = $conn->query($sql);
+        $value = $results->fetch_assoc();
+        $username = $value['username'];
 
         $profile = "SELECT * FROM profile WHERE username = '$username' ";
-        $value = mysqli_query($conn, $profile);
-        $data = $value->fetch_assoc();
+        $values = mysqli_query($conn, $profile);
+        $data = $values->fetch_assoc();
 
 
 ?>
