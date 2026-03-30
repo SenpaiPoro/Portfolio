@@ -9,7 +9,7 @@
                             <div class="text-center text-xxl-start">
                                 <div class=" text-dark-mode mb-4"><div class="text-uppercase "><?php echo $data['tagline'];?></div></div>
                                 <div class="fs-3 fw-light text-muted"><?php echo $data['support'];?></div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get online and grow fast</span></h1>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline"><?php echo $data['heading'];?> </span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.php">Resume</a>
                                     <a class="btn btn-outline-info btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.php">Projects</a>
@@ -148,8 +148,8 @@
                         <div class="col-xxl-8">
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Hello!</span></h2>
-                                <p class="lead text-dark-mode mb-4">My name is Marlon Jr Aquion Mullet</p>
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
+                                <p class="lead text-dark-mode mb-4">My name is <?php echo $data['name'];?></p>
+                                <p class="text-muted"><?php echo $data['bio'];?></p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <a class="text-gradient" href="https://www.instagram.com/cs.marlon03/" target="_blank"><i class="bi bi-instagram"></i></a>
                                     <a class="text-gradient" href="https://www.linkedin.com/in/marlon-mullet-jr-706636354/" target="_blank"><i class="bi bi-linkedin"></i></a>
