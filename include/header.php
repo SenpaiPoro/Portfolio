@@ -8,7 +8,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
         $paramResult = checkId('id');
-        $sql = "SELECT username FROM user WHERE id= '$paramResult' LIMIT 1";
+        $sql = "SELECT * FROM user WHERE id= '$paramResult' LIMIT 1";
         $results = $conn->query($sql);
         $value = $results->fetch_assoc();
         $username = $value['username'];
@@ -49,10 +49,10 @@ if (session_status() == PHP_SESSION_NONE) {
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.php">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.php">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.php?id=<?=$paramResult?>">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.php?id=<?=$paramResult?>">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.php?id=<?=$paramResult?>">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.php?id=<?=$paramResult?>">Contact</a></li>
                             <div class="d-grid gap-2">
                             <button id="themeToggle" onclick="toggleTheme()" type="button" class="btn btn-outline-dark">Switch to Dark Mode</button>
                             </div>
