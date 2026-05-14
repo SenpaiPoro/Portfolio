@@ -21,6 +21,7 @@
                                 <!-- to get an API token!-->
                                 <form action="../config/code.php" method="POST" enctype="multipart/form-data">
                                     <!-- Name input-->
+                                     <input name="user_id" type="hidden" value="<?php echo $paramResult; ?>">
                                     <div class="form-floating mb-3">
                                         <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required/>
                                         <label class="text-dark-mode" for="name">Full name</label>
