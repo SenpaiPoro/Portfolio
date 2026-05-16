@@ -21,28 +21,28 @@
                                 <!-- to get an API token!-->
                                 <form action="../config/code.php" method="POST" enctype="multipart/form-data">
                                     <!-- Name input-->
-                                     <input name="user_id" type="hidden" value="<?php echo $paramResult; ?>">
+                                     <input name="user_id" type="hidden"  value="<?php echo $paramResult; ?>">
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required/>
+                                        <input class="form-control" required id="name" name="name" type="text" placeholder="Enter your name..." required/>
                                         <label class="text-dark-mode" for="name">Full name</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                     </div>
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <input class="form-control" required id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                         <label class="text-dark-mode" for="email" >Email address</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                        <div class="invalid-feedback"  data-sb-feedback="email:email">Email is not valid.</div>
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" name="tel" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                        <input class="form-control" required id="phone" name="tel" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                         <label class="text-dark-mode" for="phone">Phone number</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control"  type="text" name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <textarea class="form-control" required type="text" name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
                                         <label class="text-dark-mode" for="message">Message</label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                     </div>
