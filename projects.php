@@ -25,7 +25,7 @@
                                             <h2 class="fw-bolder text-dark-mode"><?= htmlspecialchars($DataList['title']); ?></h2>
                                             <p class="text-dark-mode"><?= htmlspecialchars($DataList['description']); ?></p>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                        <img class="img-fluid" src="assets/projects/<?= htmlspecialchars($DataList['photo']); ?>" alt="Project" />
                                     </div>
                                 </div>
                             </div>
