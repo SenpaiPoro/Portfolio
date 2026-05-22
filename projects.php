@@ -36,7 +36,7 @@
                     else
                     {
                         ?>
-                        <h2>No Project Found <span class="badge text-bg-secondary"><a href="../Portfolio_Dashboard/project.php">Add</a></span></h2>
+                        <h2 class="text-dark-mode" >No Project Found <span class="badge text-bg-secondary"><a href="../Portfolio_Dashboard/project.php">Add </a></span></h2>
                     <?php
 
                     }?>
