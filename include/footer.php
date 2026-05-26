@@ -7,7 +7,7 @@
                         <span class="mx-1">&middot;</span>
                         <a class="small" href="#!">Terms</a>
                         <span class="mx-1">&middot;</span>
-                        <a class="small" href="contact.php">Contact</a>
+                        <a class="small" href="contact.php?id=<?=$paramResult?>">Contact</a>
                     </div>
                 </div>
             </div>
