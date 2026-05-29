@@ -16,19 +16,46 @@
             if (mysqli_num_rows($Data) > 0) {
                         foreach ($Data as $DataList) {
                 ?>
+<!-- Project Card -->
+<div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
 
-                            <!-- Project Card -->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder text-dark-mode"><?= htmlspecialchars($DataList['title']); ?></h2>
-                                            <p class="text-dark-mode"><?= htmlspecialchars($DataList['description']); ?></p>
-                                        </div>
-                                        <img class="img-fluid" src="assets/projects/<?= htmlspecialchars($DataList['photo']); ?>" alt="Project" />
-                                    </div>
-                                </div>
-                            </div>
+    <div class="card-body p-0">
+
+        <div class="row g-0 align-items-center">
+
+            <!-- Text Content -->
+            <div class="col-lg-6 col-md-12">
+
+                <div class="p-4 p-lg-5">
+
+                    <h2 class="fw-bolder text-dark-mode mb-3">
+                        <?= htmlspecialchars($DataList['title']); ?>
+                    </h2>
+
+                    <p class="text-dark-mode mb-0">
+                        <?= htmlspecialchars($DataList['description']); ?>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Image -->
+            <div class="col-lg-6 col-md-12 text-center">
+
+                <img 
+                    class="img-fluid w-100 project-img"
+                    src="assets/projects/<?= htmlspecialchars($DataList['photo']); ?>" 
+                    alt="Project"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
                     <?php 
                      }
