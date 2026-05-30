@@ -21,12 +21,12 @@
 
     <div class="card-body p-0">
 
-        <div class="row g-0 align-items-center">
+        <div class="row g- align-items-center">
 
             <!-- Text Content -->
             <div class="col-lg-6 col-md-12">
 
-                <div class="p-4 p-lg-5">
+                <div class="p-1 p-lg-5">
 
                     <h2 class="fw-bolder text-dark-mode mb-3">
                         <?= htmlspecialchars($DataList['title']); ?>
@@ -41,14 +41,13 @@
             </div>
 
             <!-- Image -->
-            <div class="col-lg-6 col-md-12 text-center">
-
+            <!-- Image -->
+            <div class="col-lg-6 col-md-12 p-0">
                 <img 
-                    class="img-fluid w-100 project-img"
                     src="assets/projects/<?= htmlspecialchars($DataList['photo']); ?>" 
                     alt="Project"
+                    class="project-img"
                 >
-
             </div>
 
         </div>
