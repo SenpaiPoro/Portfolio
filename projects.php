@@ -40,7 +40,7 @@
 
             </div>
 
-            <!-- Image -->
+        <!-- Image -->
             <!-- Image -->
             <div class="col-lg-6 col-md-12 p-0">
                 <img 
