@@ -35,6 +35,10 @@
                     <p class="text-dark-mode mb-0">
                         <?= htmlspecialchars($DataList['description']); ?>
                     </p>
+                    <br>
+                    <a href="viewproject.php?id=<?= urlencode($DataList['id']); ?>" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                      See More...
+                    </a>
 
                 </div>
 
