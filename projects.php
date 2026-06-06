@@ -15,7 +15,6 @@
             if (mysqli_num_rows($Data) > 0) {
                         foreach ($Data as $DataList) {
                 ?>
-                
 <!-- Project Card -->
 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
 
