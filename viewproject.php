@@ -44,7 +44,7 @@
                                 ">
                                     <?php echo $project['title'];?>
                                 </h2>
-                                <p class="text-dark-mode" style="color: #000;"><?php echo $project['description'];?></p>
+                                <p class="text-dark-mode" ><?php echo $project['description'];?></p>
                                 </div>
                                 <p><a class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="<?php echo $project['link']; ?>" target="_blank">View Project Source Code</a></p>
                             </div>
@@ -84,7 +84,7 @@
                                 </h2>
                                     <?php echo $DataList['title'];?>
                                 </h2>
-                                <p class="text-dark-mode" style="color: #000;"><?php echo $DataList['img_description'];?></p>
+                                <p class="text-dark-mode"><?php echo $DataList['img_description'];?></p>
                                 </div>
                             </div>
                             <!-- Image -->
