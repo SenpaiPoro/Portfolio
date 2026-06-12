@@ -1,14 +1,11 @@
-<?php include ('include/sidebar.php'); ?>
-<?php include ('include/topbar.php'); ?>
+<?php include ('include/header.php'); ?>
 <?php
-        $paramResult = checkId('id');
         $sql = "SELECT * FROM project WHERE id = '$paramResult'";
         $results = $conn->query($sql);
         $project = $results->fetch_assoc();
 ?>
 <section class="py-5">
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <a class="btn btn-primary me-md-2" type="button" href="add_project_description.php?id=<?php echo $project['id']; ?>">Add Project Description</a>
 </div>
                     <div class="text-center mb-5">
                          <h2 style="

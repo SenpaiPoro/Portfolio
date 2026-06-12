@@ -1,6 +1,5 @@
         <?php include ('include/header.php'); ?>
 
-
             <section class="py-5">
                 <div class="container px-5 mb-5">
                     <div class="text-center mb-5">
@@ -9,7 +8,6 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-11 col-xl-9 col-xxl-8">
         <?php 
-        
             $Data = Getdata("project", $paramResult );
 
             if (mysqli_num_rows($Data) > 0) {
@@ -38,9 +36,7 @@
                     <a href="viewproject.php?id=<?= urlencode($DataList['id']); ?>" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                       See More...
                     </a>
-
                 </div>
-
             </div>
 
         <!-- Image -->

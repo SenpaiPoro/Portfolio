@@ -10,14 +10,19 @@ if (session_status() == PHP_SESSION_NONE) {
         $paramResult = checkId('id');
         $sql = "SELECT * FROM user WHERE id= '$paramResult' LIMIT 1";
         $results = $conn->query($sql);
-        $value = $results->fetch_assoc();
-        $username = $value['username'];
+
+        if ($results && $results->num_rows > 0) {
+            $value = $results->fetch_assoc();
+            $username = $value['username'];
+        } else {
+            // Handle the case where no user is found
+            $username = null;
+        }
+
 
         $profile = "SELECT * FROM profile WHERE username = '$username' ";
         $values = mysqli_query($conn, $profile);
         $data = $values->fetch_assoc();
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
