@@ -6,7 +6,6 @@ if (session_status() == PHP_SESSION_NONE) {
   header('Location: login.php');
   exit();
 }
-
         $paramResult = checkId('id');
         $sql = "SELECT * FROM user WHERE id= '$paramResult' LIMIT 1";
         $results = $conn->query($sql);
@@ -18,7 +17,6 @@ if (session_status() == PHP_SESSION_NONE) {
             // Handle the case where no user is found
             $username = null;
         }
-
 
         $profile = "SELECT * FROM profile WHERE username = '$username' ";
         $values = mysqli_query($conn, $profile);
@@ -43,8 +41,6 @@ if (session_status() == PHP_SESSION_NONE) {
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <script src="js/scripts.js"></script>
-
-
     </head>
     <body class="d-flex flex-column h-100 ">
         <main class="flex-shrink-0">
