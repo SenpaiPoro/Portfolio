@@ -18,7 +18,6 @@ if (session_status() == PHP_SESSION_NONE) {
             // Handle the case where no user is found
             $username = null;
         }
-
         $profile = "SELECT * FROM profile WHERE username = '$username' ";
         $values = mysqli_query($conn, $profile);
         $data = $values->fetch_assoc();
