@@ -5,7 +5,6 @@
                 $results = $conn->query($resume);
                 $resumevalue = $results->fetch_assoc();
                 ?>
- 
  <div class="container px-5 my-5">
                 <div class="text-center mb-5">
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
@@ -23,84 +22,72 @@
                                     Download Resume
                                 </a>
                             </div>
-                            <!-- Experience Card 1-->
+                            <?php
+                                $resume = Getdata("resume", $id, "Experience");
+                                if (mysqli_num_rows($resume) > 0) {
+                                    foreach ($resume as $resumeList) {
+                                ?>
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2 "></div>
-                                                <div class="small fw-bolder text-dark-mode"><?php echo $resumevalue['name'];?></div>
-                                                <div class="small text-muted">Stark Industries</div>
-                                                <div class="small text-muted">Los Angeles, CA</div>
+                                                <div class="text-primary fw-bolder mb-2 "><?php echo $resumeList['year'];?></div>
+                                                <div class="small fw-bolder text-dark-mode"><?php echo $resumeList['title'];?></div>
+                                                <div class="small text-muted"><?php echo $resumeList['name'];?></div>
+                                                <div class="small text-muted"><?php echo $resumeList['address'];?></div>
                                       </div>
                                         </div>
-                                        <div class="col-lg-8 text-dark-mode"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8 text-dark-mode">
+                                            <div><?php echo $resumeList['description'];?></div></div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Experience Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-primary fw-bolder mb-2">2017 - 2019</div>
-                                                <div class="small fw-bolder text-dark-mode">SEM Specialist</div>
-                                                <div class="small text-muted">Wayne Enterprises</div>
-                                                <div class="small text-muted">Gotham City, NY</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8 text-dark-mode"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                            <?php
+                                    }
+                                }
+                                else
+                                {
+                                    ?>
+                                        <h2>No Experience Record!</h2>
+                                    <?php
+                                        }
+                                    ?>
                         <!-- Education Section-->
                         <section>
                             <h2 class="text-secondary fw-bolder mb-4">Education</h2>
                             <!-- Education Card 1-->
+                            <?php
+                                $resume = Getdata("resume", $id, "Education");
+                                if (mysqli_num_rows($resume) > 0) {
+                                    foreach ($resume as $resumeList) {
+                                ?>
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2015 - 2017</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder text-dark-mode">Barnett College</div>
-                                                    <div class="small text-muted">Fairfield, NY</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Master's</div>
-                                                    <div class="small text-muted">Web Development</div>
-                                                </div>
-                                            </div>
+                                            <div class="p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2 "><?php echo $resumeList['year'];?></div>
+                                                <div class="small fw-bolder text-dark-mode"><?php echo $resumeList['title'];?></div>
+                                                <div class="small text-muted"><?php echo $resumeList['name'];?></div>
+                                                <div class="small text-muted"><?php echo $resumeList['address'];?></div>
+                                      </div>
                                         </div>
-                                        <div class="col-lg-8 text-dark-mode"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8 text-dark-mode">
+                                            <div><?php echo $resumeList['description'];?></div></div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Education Card 2-->
-                            <div class="card shadow border-0 rounded-4 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="row align-items-center gx-5">
-                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                            <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
-                                                <div class="mb-2">
-                                                    <div class="small fw-bolder text-dark-mode">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
-                                                </div>
-                                                <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8 text-dark-mode"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                                    }
+                                }
+                                else
+                                {
+                                    ?>
+                                        <h2>No Education Record!</h2>
+                                    <?php
+                                        }
+                                    ?>
                         </section>
                         <!-- Divider-->
                         <div class="pb-5"></div>

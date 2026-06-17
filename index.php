@@ -1,5 +1,3 @@
-
-        
         <?php include ('include/header.php'); ?>
          <header class="py-5">
                 <div class="container px-5 pb-5">
@@ -161,6 +159,5 @@
                 </div>
             </section>
         </main>
-       
                 <?php include ('include/footer.php'); ?>
 

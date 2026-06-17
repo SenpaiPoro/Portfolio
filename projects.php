@@ -37,7 +37,7 @@
                                 letter-spacing: 1px;
                                 text-transform: uppercase;
                                 ">
-                        <?= htmlspecialchars($DataList['title']); ?>
+                         <?= htmlspecialchars($DataList['title']); ?>
                     </h2>
 
                     <p class="text-dark-mode mb-0">
