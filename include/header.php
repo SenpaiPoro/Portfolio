@@ -6,7 +6,8 @@ if (session_status() == PHP_SESSION_NONE) {
   header('Location: login.php');
   exit();
 }
-    $id = $_SESSION['id'];
+        $id = $_SESSION['id'];
+        
         $paramResult = checkId('id');
         $sql = "SELECT * FROM user WHERE id= '$paramResult' LIMIT 1";
         $results = $conn->query($sql);
