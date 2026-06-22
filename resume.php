@@ -110,7 +110,7 @@
                                             $professionalSkills = Getdata("skills", $id, "SKILL");
 
                                             foreach ($professionalSkills as $skill): ?>
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100 text-dark-mode"><?= $skill ?></div></div>
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100 text-dark-mode"><?php echo $skill['name']; ?></div></div>
                                             <?php endforeach; ?>
                                         </div>
                                     </div>
@@ -125,7 +125,7 @@
                                             $languages = Getdata("skills", $id, "LANGUAGE");
 
                                             foreach ($languages as $language): ?>
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100 text-dark-mode"><?= $language ?></div></div>
+                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100 text-dark-mode"><?php echo $language['name']; ?></div></div>
                                             <?php endforeach; ?>
                                         </div>`
                                     </div>
