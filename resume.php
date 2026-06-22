@@ -103,31 +103,48 @@
                                             <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline ">Professional Skills</span></h3>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3 mb-3">
-
-
-
-                                            <?php 
+                                        <?php 
                                             $professionalSkills = Getdata("skills", $id, "SKILL");
 
+                                            if (mysqli_num_rows($professionalSkills) > 0) {
                                             foreach ($professionalSkills as $skill): ?>
                                                 <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100 text-dark-mode"><?php echo $skill['name']; ?></div></div>
-                                            <?php endforeach; ?>
+                                        <?php endforeach; ?>
                                         </div>
+                                        <?php
+                                        }
+                                        else
+                                        {
+                                            ?>
+                                                <h2 class="text-dark-mode">No Professional Skills Record!</h2>
+                                            <?php
+                                        }
+                                        ?>
                                     </div>
                                     <!-- Languages list-->
                                     <div class="mb-0">
-                                        <div class="d-flex align-items-center mb-4">x
+                                        <div class="d-flex align-items-center mb-4">
                                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
                                             <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
                                         </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                        <div class="row row-cols-1 row-cols-md-3 mb-3">
                                             <?php 
                                             $languages = Getdata("skills", $id, "LANGUAGE");
 
+                                            if (mysqli_num_rows($languages) > 0) {
                                             foreach ($languages as $language): ?>
                                                 <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100 text-dark-mode"><?php echo $language['name']; ?></div></div>
                                             <?php endforeach; ?>
-                                        </div>`
+                                                <?php
+                                                }
+                                                else
+                                                {
+                                                    ?>
+                                                        <h2 class="text-dark-mode">No Language Record!</h2>
+                                                    <?php
+                                                }
+                                                ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
