@@ -25,18 +25,7 @@
 
                 <div class="p-1 p-lg-5">
 
-                    <h2 style="
-                                font-family: 'Oswald', sans-serif;
-                                font-size: 2rem;
-                                font-weight: 700;
-                                margin-bottom: 1rem;
-                                background: linear-gradient(90deg, #ff6a00, #ee0979);
-                                background-clip: text;
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                letter-spacing: 1px;
-                                text-transform: uppercase;
-                                ">
+                    <h2 class="text-gradient d-inline">
                          <?= htmlspecialchars($DataList['title']); ?>
                     </h2>
 
