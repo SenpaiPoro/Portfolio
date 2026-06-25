@@ -15,12 +15,6 @@
                         <section>
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="#!">
-                                    <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Resume
-                                </a>
                             </div>
                             <?php
                                 $resume = Getdata("resume", $id, "Experience");
@@ -98,7 +92,7 @@
                                 <div class="card-body p-5">
                                     <!-- Professional skills list-->
                                     <div class="mb-5">
-                                        <div class="d-flex align-items-center mb-4">
+                                        <div class="d-flex align-items-center mb-4">F
                                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
                                             <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline ">Professional Skills</span></h3>
                                         </div>
