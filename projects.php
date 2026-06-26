@@ -55,16 +55,17 @@
 
 </div>
 
-                    <?php 
-                     }
+            <?php 
+                }
                     }
                     else
                     {
-                        ?>
+                    ?>
                         <h2 class="text-dark-mode" >No Project Found </h2>
-                    <?php
+                <?php
 
-                    }?>
+                    }
+                ?>
 
                             
                         </div>
