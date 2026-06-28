@@ -43,7 +43,7 @@
                                 else
                                 {
                                     ?>
-                                        <h2>No Experience Record!</h2>
+                                        <h2 class="text-dark-mode">No Experience Record!</h2>
                                     <?php
                                         }
                                     ?>
@@ -78,7 +78,7 @@
                                 else
                                 {
                                     ?>
-                                        <h2>No Education Record!</h2>
+                                        <h2 class="text-dark-mode">No Education Record!</h2>
                                     <?php
                                         }
                                     ?>
