@@ -5,8 +5,8 @@
                         <div class="col-xxl-5">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
-                                <div class=" text-dark-mode mb-4"><div class="text-uppercase "><?php echo $data['tagline'];?></div></div>
-                                <div ><?php echo $data['support'];?></div>
+                                <div class=" text-dark-mode mb-2"><div class="text-uppercase "><?php echo $data['tagline'];?></div></div>
+                                <div class=" text-dark-mode"><?php echo $data['support'];?></div>
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline"><?php echo $data['heading'];?> </span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.php?id=<?=$paramResult?>">Resume</a>
