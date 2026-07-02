@@ -82,7 +82,6 @@
   --bs-card: white; 
   --form-background: #E2E8CE ; 
 }
-
 .dark-mode {
   --bs-body-bg: #100c0d;
   --text-color: white;
@@ -91,19 +90,16 @@
   --form-background: #262626 ; 
 
 }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
-
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
